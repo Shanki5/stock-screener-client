@@ -14,7 +14,7 @@ class InputCompany extends Component {
 		console.log(e);
 		console.log(this.state)
 		axios
-			.get('http://localhost:8082/stock-overview/IBM')
+			.post('http://localhost:8082/api/stocks/' + this.state.companyName)
 			.then(res => {
 				console.log(res)
 			})

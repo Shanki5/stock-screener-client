@@ -5,8 +5,11 @@ const StockCard = (props) => {
 	const stock = props.stock;
 
 	return(
-		<div className="stock-card-container">
-			<h2> {stock.companyName} </h2>
+		<div className="card-container">
+			<div className="desc">
+				<h2> {stock._id} </h2>
+				<p>{stock.name}</p>
+			</div>
 		</div>
 	)
 };
